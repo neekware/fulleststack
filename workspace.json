@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "fulleststack": "apps/fulleststack",
+    "fulleststack-e2e": "apps/fulleststack-e2e"
+  }
+}

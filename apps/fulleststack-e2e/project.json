@@ -1,0 +1,28 @@
+{
+  "root": "apps/fulleststack-e2e",
+  "sourceRoot": "apps/fulleststack-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/fulleststack-e2e/cypress.json",
+        "devServerTarget": "fulleststack:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "fulleststack:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/fulleststack-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["fulleststack"]
+}
