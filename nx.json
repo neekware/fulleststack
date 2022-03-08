@@ -1,5 +1,5 @@
 {
-  "npmScope": "fulleststack",
+  "npmScope": "avidtrader",
   "affected": {
     "defaultBase": "main"
   },
@@ -17,12 +17,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "NzMwMTYzNWUtMzZiOS00ZDZhLWEzOWMtZjg2NjhlY2FhYjlhfHJlYWQtd3JpdGU="
       }
     }
@@ -48,5 +43,5 @@
       }
     }
   },
-  "defaultProject": "fulleststack"
+  "defaultProject": "avidtrader"
 }

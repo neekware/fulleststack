@@ -1,6 +1,6 @@
 {
-  "root": "apps/fulleststack",
-  "sourceRoot": "apps/fulleststack",
+  "root": "apps/avidtrader",
+  "sourceRoot": "apps/avidtrader",
   "projectType": "application",
   "targets": {
     "build": {
@@ -8,8 +8,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/fulleststack",
-        "outputPath": "dist/apps/fulleststack"
+        "root": "apps/avidtrader",
+        "outputPath": "dist/apps/avidtrader"
       },
       "configurations": {
         "production": {}
@@ -18,12 +18,12 @@
     "serve": {
       "executor": "@nrwl/next:server",
       "options": {
-        "buildTarget": "fulleststack:build",
+        "buildTarget": "avidtrader:build",
         "dev": true
       },
       "configurations": {
         "production": {
-          "buildTarget": "fulleststack:build:production",
+          "buildTarget": "avidtrader:build:production",
           "dev": false
         }
       }
@@ -31,14 +31,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "fulleststack:build:production"
+        "buildTarget": "avidtrader:build:production"
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/fulleststack"],
+      "outputs": ["coverage/apps/avidtrader"],
       "options": {
-        "jestConfig": "apps/fulleststack/jest.config.js",
+        "jestConfig": "apps/avidtrader/jest.config.js",
         "passWithNoTests": true
       }
     },
@@ -46,7 +46,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/fulleststack/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/avidtrader/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },
