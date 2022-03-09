@@ -21,8 +21,8 @@ React Native and NextJS will be sharing 90%+ of common code.
  CSS                      1          400            1            0          399
  JSON                    13          339            0            0          339
  TypeScript              11          517           62          131          324
- SQL                      1           80           15           13           52
  Markdown                 2           78           26            0           52
+ SQL                      1           80           15           13           52
  JavaScript               4           33            4            6           23
  Sass                     1            2            0            0            2
  Toml                     1            3            0            2            1
