@@ -22,8 +22,7 @@ export const appsDir = path.resolve(path.join(projDir, 'apps'));
 export const distDir = path.resolve(path.join(projDir, 'dist'));
 export const projPkgJson = require(path.join(projDir, 'package.json'));
 
-export const sleep = (ms: number) =>
-  new Promise((resolve) => setTimeout(resolve, ms));
+export const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
  * Runs a command, capture and return the output
@@ -31,18 +30,14 @@ export const sleep = (ms: number) =>
  */
 export function execute(script: string, debug = false): Promise<any> {
   return new Promise((resolvePromise, rejectPromise) => {
-    childProcess.exec(
-      script,
-      { maxBuffer: 1024 * 1000 },
-      (error, stdout, stderr) => {
-        if (error) {
-          console.error(error);
-          rejectPromise(stderr);
-        } else {
-          resolvePromise(stdout);
-        }
+    childProcess.exec(script, { maxBuffer: 1024 * 1000 }, (error, stdout, stderr) => {
+      if (error) {
+        console.error(error);
+        rejectPromise(stderr);
+      } else {
+        resolvePromise(stdout);
       }
-    );
+    });
   });
 }
 

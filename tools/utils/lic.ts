@@ -58,9 +58,7 @@ async function main() {
             !content.startsWith(licenseContent.trim())
           ) {
             if (content.includes(licenseContent)) {
-              console.log(
-                `License found, but not on top, skipping it ... ${file}`
-              );
+              console.log(`License found, but not on top, skipping it ... ${file}`);
             } else {
               console.log(`License inserted ... ${file}`);
               writeFile(file, licenseContent + content, (err) => {
@@ -76,10 +74,7 @@ async function main() {
   });
 }
 
-cmdr
-  .version('0.0.1', '-v, --version')
-  .option('--verbose', 'Verbose')
-  .parse(process.argv);
+cmdr.version('0.0.1', '-v, --version').option('--verbose', 'Verbose').parse(process.argv);
 
 main().catch((err) => {
   console.error(`Error releasing`, err);
