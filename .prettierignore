@@ -1,4 +1,16 @@
 # Add files here to ignore them from prettier formatting
 
+/tmp
 /dist
+/graph
 /coverage
+/node_modules
+/libs/ngx-gql/src/lib/gql.schema.ts
+/**/*.min.js
+/**/*.min.css
+/**/*.map
+/**/*.gz
+/**/*.gz.map
+/**/*.gz.min.js
+/**/*.gz.min.css
+/**/*.gz.min.js.map

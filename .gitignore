@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 
+
 # dependencies
 /node_modules
 
@@ -25,11 +26,14 @@
 !.vscode/extensions.json
 
 # misc
+/.angular/cache
 /.sass-cache
 /connect.lock
 /coverage
+/graph
 /libpeerconnection.log
 npm-debug.log
+package-lock.json
 yarn-error.log
 testem.log
 /typings
@@ -38,5 +42,9 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Env
+# Prsima
 .env
+dev.db*
+
+# nx migrations
+migrations.json
