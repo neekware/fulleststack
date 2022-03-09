@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "avidtrader": "apps/avidtrader",
+    "avidtrader-e2e": "apps/avidtrader-e2e"
+  }
+}

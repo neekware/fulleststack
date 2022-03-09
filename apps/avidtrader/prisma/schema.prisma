@@ -1,0 +1,80 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+generator dbml {
+  provider = "prisma-dbml-generator"
+}
+
+enum Role {
+  USER
+  STAFF
+  ADMIN
+  SUPERUSER
+}
+
+enum Permission {
+  appALL
+  groupCREATE
+  groupREAD
+  groupUPDATE
+  groupDELETE
+  groupALL
+  userCREATE
+  userREAD
+  userUPDATE
+  userDELETE
+  userALL
+  contactMessageCREATE
+  contactMessageREAD
+  contactMessageUPDATE
+  contactMessageDELETE
+  contactMessageALL
+
+}
+
+model Group {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+  name      String   @unique
+  isActive  Boolean  @default(false)
+  User      User[]
+}
+
+model User {
+  id             String       @id @default(cuid())
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  lastLoginAt    DateTime
+  email          String       @unique
+  username       String       @unique
+  password       String       @default(cuid())
+  sessionVersion Int          @default(1)
+  isVerified     Boolean      @default(false)
+  isActive       Boolean      @default(false)
+  firstName      String       @default("")
+  lastName       String       @default("")
+  language       String       @default("en")
+  role           Role         @default(USER)
+  permissions    Permission[]
+  groupId        String?
+  groups         Group[]
+}
+
+model ContactMessage {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  email       String
+  subject     String
+  content     String
+  countryCode String
+  ipAddress   String
+  language    String   @default("en")
+}
