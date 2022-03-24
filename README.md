@@ -14,21 +14,33 @@ React Native and NextJS will be sharing 90%+ of common code.
 
 ## Install
 
-- Clone the repo
-- cd into the newly cloned directory
-- run `yarn install`
+- `git clone https://github.com/neekware/FullestStack`
+- `cd FullestStack`
+- `yarn install`
 
 ## NextJS
 
 ### Start the server
 
-- run `yarn start avidtrader`
+- `yarn start avidtrader`
 
 ## React Native
 
-### Start the mobile build to get options to run on iso and android simulators
+### Install Xcode / Simulator
 
-- run `yarn start avidtrader-mobile`
+- `Follow the instruction` [here](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html)
+
+### Install Android SDK / Simulator
+
+- `Follow the instruction` [here](https://developer.android.com/studio/run/emulator#install)
+
+## Start the React Native Application
+
+- `yarn start avidtrader-mobile`
+
+## Test
+
+- TBD
 
 ## Lines of Code (auto-generated stats)
 
@@ -39,12 +51,12 @@ React Native and NextJS will be sharing 90%+ of common code.
  Typescript JSX           5          472           11            1          460
  TypeScript              14          543           66          138          339
  JavaScript              12          233           20           20          193
- Markdown                 2           96           34            0           62
+ Markdown                 2          108           40            0           68
  SQL                      1           80           15           13           52
  CSS                      1            3            0            0            3
  Sass                     1            2            0            0            2
  Toml                     1            3            0            2            1
 --------------------------------------------------------------------------------
- Total                   61         2125          146          174         1805
+ Total                   61         2137          152          174         1811
 --------------------------------------------------------------------------------
 ```
