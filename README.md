@@ -18,7 +18,7 @@ React Native and NextJS will be sharing 90%+ of common code.
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
  JSON                    13          342            0            0          342
- TypeScript              11          533           64          145          324
+ TypeScript              11          525           63          138          324
  Typescript JSX           3           63            5            0           58
  SQL                      1           80           15           13           52
  Markdown                 2           78           26            0           52
@@ -27,6 +27,6 @@ React Native and NextJS will be sharing 90%+ of common code.
  Sass                     1            2            0            0            2
  Toml                     1            3            0            2            1
 --------------------------------------------------------------------------------
- Total                   39         1157          116          167          874
+ Total                   39         1149          115          160          874
 --------------------------------------------------------------------------------
 ```
