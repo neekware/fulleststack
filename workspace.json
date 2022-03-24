@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "avidtrader": "apps/avidtrader",
-    "avidtrader-e2e": "apps/avidtrader-e2e"
+    "avidtrader-e2e": "apps/avidtrader-e2e",
+    "shared-components": "libs/shared-components"
   }
 }
