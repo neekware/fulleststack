@@ -7,9 +7,9 @@ export function Dashboard(props: DashboardProps) {
   return (
     <div>
       <Navbar />
-      <h1>
-        Dashboard
-      </h1>
+      <div className='container p-8'>
+        <h1>Dashboard</h1>
+      </div>
     </div>
   );
 }

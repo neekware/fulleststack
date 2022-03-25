@@ -1,2 +1,2 @@
-export * from './lib/shared-components';
-export * from './navbar/navbar'
+
+export * from './lib/navbar/navbar'
