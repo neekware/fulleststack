@@ -12,21 +12,51 @@ To create an open source dashboard from the ground-up. `Quality of Experience` i
 
 React Native and NextJS will be sharing 90%+ of common code.
 
+## Install
+
+- `git clone https://github.com/neekware/FullestStack`
+- `cd FullestStack`
+- `yarn install`
+
+## NextJS
+
+### Start the server
+
+- `yarn start avidtrader`
+
+## React Native
+
+### Install Xcode / Simulator
+
+- `Follow the instruction` [here](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html)
+
+### Install Android SDK / Simulator
+
+- `Follow the instruction` [here](https://developer.android.com/studio/run/emulator#install)
+
+## Start the React Native Application
+
+- `yarn start avidtrader-mobile`
+
+## Test
+
+- TBD
+
 ## Lines of Code (auto-generated stats)
 
 ```txt<br>--------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- JSON                    17          441            0            0          441
- TypeScript              12          527           64          138          325
- Typescript JSX           6          131           17            3          111
- JavaScript              10          103            8            6           89
- Markdown                 3           85           29            0           56
+ JSON                    28          792            0            0          792
+ Typescript JSX           8          540           23            4          513
+ TypeScript              15          545           67          138          340
+ JavaScript              16          283           22           19          242
+ Markdown                 3          115           43            0           72
  SQL                      1           80           15           13           52
  CSS                      1            3            0            0            3
  Sass                     3            2            0            0            2
  Toml                     1            3            0            2            1
 --------------------------------------------------------------------------------
- Total                   54         1375          133          162         1080
+ Total                   76         2363          170          176         2017
 --------------------------------------------------------------------------------
 ```

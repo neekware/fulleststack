@@ -3,6 +3,8 @@
   "projects": {
     "avidtrader": "apps/avidtrader",
     "avidtrader-e2e": "apps/avidtrader-e2e",
-    "shared-components": "libs/shared-components"
+    "shared-components": "libs/shared-components",
+    "avidtrader-mobile": "apps/avidtrader-mobile",
+    "avidtrader-mobile-e2e": "apps/avidtrader-mobile-e2e"
   }
 }
