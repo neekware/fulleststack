@@ -3,24 +3,39 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@expo/metro-config": "*",
+    "@nrwl/expo": "*",
+    "@nrwl/next": "*",
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
-    "react-native": "*",
     "expo": "*",
     "expo-dev-client": "*",
-    "expo-status-bar": "*",
     "expo-splash-screen": "*",
+    "expo-status-bar": "*",
     "expo-structured-headers": "*",
     "expo-updates": "*",
+    "react": "*",
+    "react-native": "*",
     "react-native-gesture-handler": "*",
     "react-native-reanimated": "*",
     "react-native-safe-area-context": "*",
     "react-native-screens": "*",
     "react-native-svg": "*",
-    "react-native-web": "*"
+    "react-native-web": "*",
+    "tailwind-rn": "^4.2.0",
+    "tsconfig-paths-webpack-plugin": "*",
+    "postcss": "*",
+    "tailwindcss": "*"
   },
   "scripts": {
     "eas-build-pre-install": "cd ../../ && cp yarn.lock ./apps/avidtrader-mobile/ && mv ./apps/avidtrader-mobile/eas.js ./index.js",
-    "postinstall": "rm -r node_modules && cd ../../ && yarn install && npx nx sync-deps avidtrader-mobile && npx nx ensure-symlink avidtrader-mobile"
+    "postinstall": "rm -r node_modules && cd ../../ && yarn install && npx nx sync-deps avidtrader-mobile && npx nx ensure-symlink avidtrader-mobile",
+    "build:tailwind": "tailwindcss --input input.css --output tailwind.css --no-autoprefixer && tailwind-rn",
+    "dev:tailwind": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn --watch\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
   }
 }
