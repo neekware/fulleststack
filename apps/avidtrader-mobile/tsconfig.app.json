@@ -6,7 +6,6 @@
       "node"
     ]
   },
-  "composite": true,
   "exclude": [
     "**/*.spec.ts",
     "**/*.spec.tsx",
@@ -17,5 +16,6 @@
     "**/*.tsx",
     "**/*.js",
     "**/*.jsx"
-  ]
+  ],
+  "composite": true,
 }

@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
 import { View, Text, SafeAreaView } from 'react-native';
 import { useTailwind } from 'tailwind-rn'
 
-import Heart from '../icons/heart.svg'
+// import Heart from '../icons/heart.svg'
 /* eslint-disable-next-line */
 
 const Home = () => {

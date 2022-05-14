@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React, { useRef, useState } from 'react';
+import React from 'react';
 
 import { TailwindProvider } from 'tailwind-rn';
 import utilities from '../../tailwind.json';
