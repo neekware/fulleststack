@@ -1,0 +1,15 @@
+{
+  "root": "libs/shaerd-types",
+  "sourceRoot": "libs/shaerd-types/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shaerd-types/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
