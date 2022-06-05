@@ -5,6 +5,7 @@
     "avidtrader-e2e": "apps/avidtrader-e2e",
     "avidtrader-mobile": "apps/avidtrader-mobile",
     "avidtrader-mobile-e2e": "apps/avidtrader-mobile-e2e",
+    "shaerd-types": "libs/shared-types",
     "shared-components": "libs/shared-components"
   }
 }
