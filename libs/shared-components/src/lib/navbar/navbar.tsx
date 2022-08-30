@@ -5,33 +5,32 @@ import { useState } from 'react';
 
 
 /* eslint-disable-next-line */
-export interface NavbarProps {}
+export interface NavbarProps { }
 
 export function Navbar(props: NavbarProps) {
 
-    const [active, setActive] = useState(false);  
-    const handleClick = () => {
-      setActive(!active);
-    };
+  const [active, setActive] = useState(false);
+  const handleClick = () => {
+    setActive(!active);
+  };
 
   return (
     <nav className='flex items-center flex-wrap bg-slate-800 p-3 dark:bg-slate-800'>
       <Link href='/'>
         <a className='inline-flex items-center p-2 mr-4 '>
           <span className='text-xl text-white font-bold uppercase tracking-wide'>
-          Avidtrader
+            Avidtrader
           </span>
         </a>
       </Link>
       <button
         className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
         onClick={handleClick}
-      > 
+      >
       </button>
       <div
-        className={`${
-          active ? '' : 'hidden'
-        }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+        className={`${active ? '' : 'hidden'
+          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
       >
         <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
           <Link href='/'>
