@@ -1,6 +1,6 @@
 import './index.module.scss';
 /* eslint-disable-next-line */
-export interface DashboardProps {}
+export interface DashboardProps { }
 
 export function Dashboard(props: DashboardProps) {
   return (
