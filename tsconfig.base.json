@@ -11,12 +11,13 @@
     "target": "es2015",
     "module": "esnext",
     "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
+    "skipLibCheck": false,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
       "@avidtrader/shaerd-types": ["libs/shared-types/src/index.ts"],
-      "@avidtrader/shared-components": ["libs/shared-components/src/index.ts"]
+      "@avidtrader/shared-components": ["libs/shared-components/src/index.ts"],
+      "@avidtrader/shared-elements": ["libs/shared-elements/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
