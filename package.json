@@ -62,6 +62,7 @@
     "expo-structured-headers": "2.1.1",
     "expo-updates": "0.11.6",
     "next": "12.1.0",
+    "next-seo": "^5.14.1",
     "postcss": "^8.4.8",
     "react": "17.0.2",
     "react-dom": "17.0.2",
