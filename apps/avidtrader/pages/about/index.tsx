@@ -1,25 +1,28 @@
+import React from 'react';
+import type { NextPageWithLayout } from '../_app'
 import './index.module.css';
+import Layout from '../../../../libs/shared-components/src/lib/layout/layout';
+import Sidebar from '../../../../libs/shared-components/src/lib/sidebar/sidebar';
 
-/* eslint-disable-next-line */
-export interface AboutProps {
-  name: string;
-}
-
-export function About(props: AboutProps) {
+const About: NextPageWithLayout = () => {
   return (
-    <>
-    <div className="flex flex-col items-center justify-center">
+    <section>
       <h2>
-        Welcome To About Page
+        About Page
       </h2>
-      
-    </div>
-    </>
-  );
+    </section>
+  )
 }
 
-export const clickHandler = () => {
-  console.log('clicked button', this);
-}
+export default About
 
-export default About;
+About.getLayout = function getLayout(page: React.ReactElement) {
+
+  return (
+    <Layout>
+      <Sidebar />
+      {page}
+    </Layout>
+  )
+
+}

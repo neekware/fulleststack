@@ -13,6 +13,6 @@
     "isolatedModules": true,
     "incremental": true
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts", "../../libs/shared-components/src/lib/sidebar/sidebar.tsx", "../../libs/shared-components/src/lib/sidebar/sidebar.tsx"],
   "exclude": ["node_modules"]
 }
